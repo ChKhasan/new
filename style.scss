@@ -1,0 +1,235 @@
+@import 'var';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-link {
+    font-family: $font-f;
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+@extend .font11;
+text-align: center;
+color:#1F2E35CC !important;
+&:hover {
+    background: $color-red;
+}
+.font11 {
+letter-spacing: 0em;
+font-style: normal;
+
+}
+
+
+
+}
+.fon0 {
+   margin-top: 100px !important;
+}
+.get-btn0:focus {
+    box-shadow: none !important;
+}
+.get-btn {
+    font-family: $font-f;
+font-size: 20px;
+@extend .font11;
+font-weight: 400;
+line-height: 29px;
+text-align: left;
+color: #FFFFFF !important;
+
+background: $color-red !important;
+&:hover {
+color: $color-red !important;
+background: white !important;
+border: 2px solid $color-red;
+}
+
+
+}
+.fon h1 {
+    font-family: $font-f;
+font-size: 48px;
+@extend .font11;
+font-weight: 700;
+line-height: 64px;
+text-align: left;
+
+
+
+}
+
+.fon h1:nth-child(3) {
+    color: $color-red;
+}
+.p {
+    font-family: $font-f;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    @extend .font11;
+    text-align: left;
+    color: $color-p;
+}
+.fon p {
+   
+@extend .p;
+}
+.center {
+    background: #F6F6F6;
+
+}
+.center-1 h4:nth-child(2),.center-1 h4:nth-child(4) {
+    display: inline;
+    font-family: $font-f;
+    font-size: 32px;
+
+    font-weight: 500;
+    line-height: 43px;
+    @extend .font11;
+    text-align: left; 
+    color: $color-red;
+}
+.center-1 h4:first-child{
+display: inline;
+font-family: $font-f;
+font-size: 32px;
+font-weight: 500;
+line-height: 43px;
+@extend .font11;
+text-align: left;
+
+}
+.center-1 {
+    p {
+        @extend .p;
+    }
+}
+.title h1 {
+    font-family: $font-f;
+font-size: 32px;
+font-weight: 500 !important;
+line-height: 43px;
+@extend .font11;
+text-align: center;
+
+}
+.img-c img {
+    width: 70% !important;
+}
+.card {
+    border: none !important;
+    width: 100% !important;
+}
+.card-img-top {
+    width: 25% !important;
+}
+.card-title {
+    font-family: $font-f;
+font-size: 28px;
+font-weight: 500;
+line-height: 37px;
+@extend .font11;
+text-align: left;
+color: $color-red;
+
+}
+.card-text {
+    font-family: $font-f;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+@extend .font11;
+text-align: left;
+color: $color-p;
+
+}
+.footer {
+    background: $color-red;
+    p{
+        
+        color: white;
+        font-family: $font-f;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        @extend .font11;
+        // text-align: left;
+        text-align: center;
+
+    }
+}
+.nav1 {
+    border: 1px solid rgba(0,0,0,0.07);
+}
+@media screen and (max-width: 1200px){
+    .center-1 {
+        h4 {
+            text-align: center !important;
+        }
+        p {       text-align: center; }
+        .h1w {
+            display: flex;
+            justify-content: center;
+            h4 {
+                text-align: center;
+            }
+        }   
+    }
+    .fon h1,.fon p  {       
+    text-align: center;
+    }
+    .fon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
+
+@media screen and (max-width: 990px){
+  
+    .card , .card-body{
+        border: none !important;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-img-top {
+        width: 25% !important;
+    }
+
+    .card-title {
+        font-family: $font-f;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 37px;
+    @extend .font11;
+    text-align: center;
+    color: $color-red;
+    
+    }
+    .card-text {
+        font-family: $font-f;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    @extend .font11;
+    text-align: center;
+    color: $color-p;
+    
+    }
+}
+@media screen and (max-width: 500px) {
+    .fon h1 {
+font-size: 30px;
+line-height: 25px;
+    }
+    .center-1 h1,.h1w h1{
+        font-size: 30px !important;
+        line-height: 25px;
+        text-align: center;     
+    }
+}
